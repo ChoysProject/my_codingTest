@@ -1,4 +1,4 @@
-package org.test.Beginner;
+package org.test.X.Beginner;
 
 public class 특정문자제거 {
 
