@@ -7,13 +7,28 @@ public class ad제거 {
 //    모든 문자열을 제거하고 남은 문자열을 순서를 유지하여 배열로 return 하는 solution 함수를 완성해 주세요.
 
 //입출력 예
-//    strArr	result
-//["and","notad","abcd"]	["and","abcd"]
+//      strArr	result
+//        ["and","notad","abcd"]	    ["and","abcd"]
 //        ["there","are","no","a","ds"]	["there","are","no","a","ds"]
 
-    public String[] solution(String[] strArr){
+    public String[] solution(String[] strArr) {
 
+        int arrayIndex = 0;
+        for (String value : strArr){
+            if (!value.contains("ad")){
+                arrayIndex++;
+            }
+        }
 
-        return strArr;
+        String[] result = new String[arrayIndex];
+        int index = 0;
+
+        for (int i=0;i<strArr.length;i++){
+            if (!strArr[i].contains("ad")){
+                result[index] = strArr[i];
+                index++;
+            }
+        }
+        return result;
     }
 }
