@@ -11,9 +11,7 @@ public class 문자열반복해서출력하기 {
         String s = sc.next();
         int n = sc.nextInt();
 
-        for (int i=0;i<n;i++){
-            System.out.print(s);
-        }
+        System.out.print(s.repeat(n));
 
     }
 }
