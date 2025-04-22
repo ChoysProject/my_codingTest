@@ -17,7 +17,7 @@ public class 배열에서문자열대소문자변환하기 {
         String[] answerArr = new String[strArr.length];
 
         for (int i=0;i<strArr.length;i++){
-            answerArr[i] = i % 2 ==0 ? strArr[i].toLowerCase() : strArr[i].toUpperCase(strArr[i]);
+            answerArr[i] = i % 2 ==0 ? strArr[i].toLowerCase() : strArr[i].toUpperCase();
         }
 
         return answerArr;
