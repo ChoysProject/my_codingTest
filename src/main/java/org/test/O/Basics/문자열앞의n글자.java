@@ -19,4 +19,7 @@ public class 문자열앞의n글자 {
         return sb.toString();
     }
 
+    // 최적화 코드, substring을 사용하면 한줄로 해결.
+//    return my_string.substring(0, n);
+
 }
